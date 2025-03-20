@@ -765,11 +765,15 @@ h2{
 }
 
 #plan-action li {
-  list-style: none !important;
+  /*list-style: none !important;*/
 }
 
 #plan-action ul {
-  padding-inline-start: 0;
+ /* padding-inline-start: 0;*/
+}
+
+#plan-action p{
+  margin-top: 1.3em;
 }
 
 ul{
@@ -780,10 +784,10 @@ ul{
   text-align: justify;
 }
 
-.blur-image{
-	margin-top: 20px;
-	margin-bottom: 20px;
-  }
+.gain-financier li{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 </style>
   </head>
   <body>
@@ -808,12 +812,12 @@ ul{
 
       <div class="page-body">
         <h2 id="1b5a37cd-425d-80da-a178-edc52ee39f68" class="">1️⃣ Score Global &amp; Interprétation</h2>
-        <p id="1b5a37cd-425d-80d1-9629-d8289f41a831" class="">📊 <strong>Score Global :</strong> <span id="scoreGlobal"></span></p>
+        <p id="1b5a37cd-425d-80d1-9629-d8289f41a831" class=""><strong>Score Global :</strong> <span id="scoreGlobal"></span></p>
         <p id="1b5a37cd-425d-80d1-9629-d8289f41a831" class="">
-          🚀 <strong>Votre Gain minimum si passage à 80% de maturité :</strong> <span class="gainMinimum"></span>
+          <strong>Votre Gain minimum si passage à 80% de maturité :</strong> <span class="gainMinimum"></span>
         </p>
 
-        <p id="1b5a37cd-425d-8053-aab8-c46383786f60" class="">🎯 <strong>Niveaux de Maturité en Automatisation</strong> :</p>
+        <p id="1b5a37cd-425d-8053-aab8-c46383786f60" class=""><strong>Niveaux de Maturité en Automatisation</strong> :</p>
         <ul id="1b5a37cd-425d-8063-acca-ecc7decce188" class="bulleted-list">
           <li style="list-style-type:disc"><strong>0-20%</strong> : Automatisation quasi inexistante – Dépendance humaine critique.</li>
         </ul>
@@ -832,16 +836,18 @@ ul{
 
         <h2 id="1b5a37cd-425d-80a9-bae2-fbafa88fc51e" class="">2️⃣ Éligibilité et ROI minimal estimé :</h2>
         <div>
-          <p>🎉 Bonne nouvelle ! Votre score vous rend éligible à l'accompagnement BOOSTEUR avec un ROI minimal estimé à <strong class="gainMinimum"></strong></p>
+          <p>
+            🎉 Félicitations ! Votre score vous qualifie pour l'accompagnement BOOSTEUR D'ENTREPRISE. Sur la base de votre profil, nous estimons un ROI minimal de <strong class="gainMinimum"></strong> sur 12 mois
+          </p>
 
-          <h3>✅ Votre marge de progression est considérable :</h3>
+          <h3>Votre marge de progression est considérable :</h3>
           <p>En atteignant 80% de maturité, vous bénéficierez d’un gain minimal estimé à <strong class="gainMinimum"></strong>.</p>
 
-          <h3>📈 Un ROI garanti :</h3>
+          <h3>Un ROI garanti :</h3>
           <p>Avec notre méthodologie éprouvée, vous pouvez transformer votre entreprise en un actif performant et autonome, tout en maximisant votre rentabilité.</p>
 
           <div id="call-to-action">
-            <a href="https://calendly.com/boosteur-d-entreprise/30min?month=2025-03">👉 Passez à l’action maintenant et sécurisez votre croissance !</a>
+            <a href="https://calendly.com/boosteur-d-entreprise/30min?month=2025-03">👉 Je passe à l'action maintenant et je sécurise ma croissance !</a>
           </div>
 
         </div>
@@ -893,7 +899,7 @@ ul{
 		</div>
 
         <div id="call-to-action">
-          <a href="https://calendly.com/boosteur-d-entreprise/30min?month=2025-03">Besoin d’un accompagnement ou d’un audit approfondi ? <br/> Contactez-nous pour un plan d’optimisation personnalisé.</a>
+          <a href="https://calendly.com/boosteur-d-entreprise/30min?month=2025-03">Je passe à l'action maintenant et je sécurise ma croissance !</a>
         </div>
 
         <p id="1b5a37cd-425d-8000-8afd-fd9c77bb2dac" class=""><strong>🚀 Vers une entreprise 100% automatisée et scalable ! 🚀</strong></p>
@@ -933,7 +939,6 @@ ul{
             });
 
             if(formData) {
-              //console.log(formData);
 
               const chartData = [
                   formData['Score Fondations'],
